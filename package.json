@@ -1,0 +1,40 @@
+{
+  "name": "docx-to-pdf-converter",
+  "version": "1.0.0",
+  "description": "A Node.js server for converting DOCX files to PDF using a PowerShell script.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js", 
+    "dev": "nodemon app.js",
+    "lint": "eslint .",
+    "test": "echo \"No tests specified\" && exit 1"
+  },
+  "keywords": [
+    "docx",
+    "pdf",
+    "conversion",
+    "express",
+    "powershell",
+    "server"
+  ],
+  "author": "Harjot Singh",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "http-server": "^14.1.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=14.0.0" 
+  }
+}
+
