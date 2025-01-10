@@ -10,10 +10,9 @@ const port = 3000; // Port number for the server
 // Enable CORS for all requests
 app.use(cors());
 
-
-app.get('/'),async(req,res)=>{
-  res.write('heelo you are connected to wordtoPd connverter');
-}
+app.get('/', async (req, res) => {
+  res.send('Hello! You are connected to the Word-to-PDF converter.');
+});
 
 // Middleware to parse JSON body (for Base64 string)
 app.use(express.json({ limit: '50mb' })); // Increase the body size limit if necessary
